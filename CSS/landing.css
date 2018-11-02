@@ -1,3 +1,5 @@
+/* ============All============== */
+
 * {
     font-family: 'Lato';
     color: #6A787B;
@@ -7,6 +9,8 @@ body {
     width: 100%;
     margin: 0;
 }
+
+/* ============Header============== */
 
 header {
     background-image: url(../IMG/blog_header_bg.jpg);
@@ -25,6 +29,7 @@ h1 {
     position: relative;
     top: 50%;
 }
+
 ul {
     margin: 0px;
     padding: 20px 20px 0 20px;
@@ -48,9 +53,11 @@ li a:hover {
     color: white;
 }
 
+/* ============Main============== */
+
 .main_img {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 100%;
 }
 
@@ -64,6 +71,19 @@ article {
     display: block;
     margin-left: 5vw; 
 }
+
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 10px 0;
+}
+
+h3{
+    letter-spacing: .1em;
+}
+
+
+/* ============About============== */
 
 ul.recent_issues {
     list-style-type: disc;
@@ -82,23 +102,17 @@ ul.recent_issues li{
     color: #7B98AA;
 }
 
-p {
-    font-weight: 400;
-    line-height: 1.4em;
-    
-}
-
-h3{
-    letter-spacing: .1em;
-}
-h4 {
-    font-size: 18px;
-    margin: 40px 0 15px 5vw;
-}
+/* ============Footer============== */
 
 footer {
     height: 160px;
+    margin: 0;
     background-color: #CDF3F6
+}
+
+h4 {
+    font-size: 18px;
+    margin: 20px 0 15px 5vw;
 }
 
 ul.social {
@@ -122,5 +136,13 @@ hr {
 h5 {
     text-align: center;
     margin: 0;
-    padding-top: 12px;
 }
+
+/* ============Media Queries============== */
+
+/* @media only screen and (max-width: 900px){
+    ul{
+        padding: none;
+        justify-content: space-between;
+    }
+} */
