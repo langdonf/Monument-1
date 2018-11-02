@@ -32,7 +32,7 @@ h1 {
 
 ul {
     margin: 0px;
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 0 0;
     width: 100%;
     font-size: 16px;
     font-weight: 700;
@@ -129,20 +129,34 @@ ul.social li {
 
 hr {
     width: 100%;
-    margin-top: 80px;
+    margin-top: 70px;
     border: 1px solid black
 }
 
 h5 {
     text-align: center;
     margin: 0;
+    margin-top: 5px;
 }
 
 /* ============Media Queries============== */
 
-/* @media only screen and (max-width: 900px){
+@media only screen and (max-width: 900px){
     ul{
-        padding: none;
-        justify-content: space-between;
+        margin: 0px;
+        padding: 20px 20px 0 0px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
     }
-} */
+
+    li a {
+        color: #64A0AC;
+        padding: 20px 36px;
+        text-decoration: none;
+    }
+}
