@@ -1,0 +1,126 @@
+* {
+    font-family: 'Lato';
+    color: #6A787B;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    background-image: url(../IMG/blog_header_bg.jpg);
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    
+}
+
+h1 {
+    color: white;
+    font-family: 'Lato';
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: .1em;
+    position: relative;
+    top: 50%;
+}
+ul {
+    margin: 0px;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+li a {
+    color: #64A0AC;
+    padding: 20px 96px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.main_img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+article {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.about_img {
+    display: block;
+    margin-left: 5vw; 
+}
+
+ul.recent_issues {
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    color: #7B98AA;
+    padding: 0px 8px 30px 8px;
+    margin-left: 5vw; 
+    font-weight: 500;
+    
+}
+ul.recent_issues li{
+    padding-top: 10px;
+    letter-spacing: .1em;
+    font-weight: bold;
+    color: #7B98AA;
+}
+
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+    
+}
+
+h3{
+    letter-spacing: .1em;
+}
+h4 {
+    font-size: 18px;
+    margin: 40px 0 15px 5vw;
+}
+
+footer {
+    height: 160px;
+    background-color: #CDF3F6
+}
+
+ul.social {
+    position: relative;
+    top: 18%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+ul.social li {
+    padding: 0 20px;
+}
+
+hr {
+    width: 100%;
+    margin-top: 80px;
+    border: 1px solid black
+}
+
+h5 {
+    text-align: center;
+    margin: 0;
+    padding-top: 12px;
+}
