@@ -17,10 +17,10 @@ body {
 
 header {
     background-image: url(../IMG/blog_header_bg.jpg);
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-position: center;
-    margin-top: 40px;
+    margin-top: -34px;
     
 }
 h1 {
@@ -299,11 +299,14 @@ hr {
         height: 2vh;
         margin: 2% 0% 2% 0%;
     }
-
+    body {
+        margin: 0 auto
+    }
     main {
         display: block;
         width: 95vw;
-        margin: 0 auto;
+        margin-left: 2em;
+        
     }
 
     article {
@@ -326,31 +329,34 @@ hr {
         
     }
     #hamburger:hover {
-        nav ul li a {
-            display: block;
-            
-    
-        }
-        .main-nav ul li{
-            display: block;
+        
+        
+
+    }
+    nav {
+        visibility: hidden;
     }
 
     nav ul li a {
         display: none;
-        
-
     }
+    
     .main-nav ul li{
         display: none;
         
     }
+    header {
+        margin-top: -30px;
+        position: relative;
+    }
 
-
-
-
-
-
-
-
+    ul.recent_issues {
+        list-style-type: disc;
+        display: flex;
+        flex-direction: column;
+        color: #7B98AA;
+        font-weight: 500;
+        margin-left: 2em;
+    }
 
 }
