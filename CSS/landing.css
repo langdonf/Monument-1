@@ -93,6 +93,7 @@ h3 {
     font-family: 'Raleway';
     font-weight: 400;
     font-size: 20px;
+    line-height: 20px;
 }
 section {
     display: flex;
@@ -157,6 +158,16 @@ section.gallery img {
 div img {
     width: 100%
 }
+div.twenty {
+    padding: 80px 0 20px 0;
+}
+div h3{
+    font-weight: 700;
+}
+h4 {
+    text-align: center;
+    font-weight: normal;
+}
 /* ===============ABOUT================== */
 
 article.about {
@@ -170,7 +181,6 @@ h2{
     font-size: 22px;
     text-align: center;
     letter-spacing: .1em;
-    position: relative;
     top: 10%;
 }
 article.about h3 {
@@ -245,7 +255,7 @@ footer {
 }
 
 h4 {
-    font-family: 'Raleway'
+    font-family: 'Raleway';
     font-weight: 600;
     font-size: 18px;
 }
@@ -280,7 +290,7 @@ form {
 button.button {
     border: 2px solid black;
     background-color: #CDF3F6;
-    padding: 12px 40px;
+    padding: 10px 40px;
     margin: 15px;
     font-family: 'Raleway';
     font-size: 14px;
@@ -293,13 +303,96 @@ button:hover{
 input{
     border-style: none;
     background-color: white;
-    padding: 12px 20px;
+    padding: 10px 80px;
     margin: 15px;
     font-family: 'Raleway';
     font-size: 14px;
     font-weight: 600;
+    text-align: center;
 }
 
 hr {
     border-top: 1px solid black;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 900px){
+    ul{
+        margin: 0px;
+        padding: 20px 0px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    li a {
+        color: #64A0AC;
+        padding: 20px 36px;
+        text-decoration: none;
+    }
+    
+    
+    section.archive {
+        display: block;
+        width: 100%;
+    }
+    
+    section.archive article {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1em;
+    }
+    h3.comment {
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: normal;
+    
+    
+    }
+    div.comment {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 80%;
+        margin-bottom: 60px;
+    }
+    h3.comment {
+        text-align: center
+    }
+    div>textarea {
+        border-style: none;
+        background-color: white;
+        border: 2px solid black;
+        width: 96%;
+        height: 22vh;
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-weight: 600;
+    }
+    div>button {
+        width: 96%;
+        height: 6vh;
+        border-style: none;
+        background-color: white;
+        border: 2px solid black;
+        font-family: 'Raleway';
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    div.comment>input.third {
+        border-style: none;
+        background-color: white;
+        border: 2px solid black;
+        width: 96%;
+        height: 2vh;
+        margin: 10px 0;
+    }
+    
 }
