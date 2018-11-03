@@ -1,4 +1,4 @@
-/* ===============ALL================== */
+/* ============All============== */
 
 * {
     color: #6A787B;
@@ -13,7 +13,33 @@ body {
     margin: 0;
 }
 
-/* ===============NAV================== */
+/* ============Header============== */
+
+header {
+    background-image: url(../IMG/blog_header_bg.jpg);
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    margin-top: 40px;
+    
+}
+h1 {
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: .1em;
+    position: relative;
+    top: 50%;
+}
+h2{
+    font-family: 'Raleway'
+    font-weight: 600;
+}
+
+
+/* ============Nav============== */
 
 .nav {
     position: fixed;
@@ -50,146 +76,80 @@ li a:hover {
     color: white;
 }
 
-/* ===============HEADER================== */
+/* ============Main============== */
 
-
-header {
-    background-image: url(../IMG/home_header_bg.jpg);
-    height: 80vh;
+.main_img {
+    display: block;
     width: 100%;
-    background-position: center;
-    
 }
-h1 {
-    color: white;
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 36px;
-    text-align: center;
-    letter-spacing: .1em;
-    position: relative;
-    top: 40%;
-}
-header h2{
-    color: white;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: .1em;
-    position: relative;
-    top: 40%;
-}
-
-/* ===============MAIN================== */
-
 main {
-    width: 90vw;
-    margin: 0 auto;
-}
-h3 {
-    text-align: center;
-    color: darkgrey;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 20px;
-}
-section {
     display: flex;
     flex-direction: row;
+    width: 95vw;
+    margin: 0 auto;
+}
+article {
+    display: block;
+    margin: 20px 2vw;
+}
+article.about{
+    text-align: center;
 }
 
-section article {
+aside{
+    margin-top: 60px;
+    width: 25%;
+    display: block;
+}
+
+.about_img {
+    display: block; 
+    width: 90%;
+    margin: 10px;
+}
+
+p {
+    font-family: 'Lato';
+    font-weight: 400;
+    line-height: 1.618em;
+    width: 100%;
+}
+
+h3{
+    letter-spacing: .1em;
+    font-family: 'Raleway'
+    font-weight: 600;
+}
+
+
+/* ============About============== */
+aside>h4{
+    text-align: center;
+}
+
+ul.recent_issues {
+    list-style-type: disc;
     display: flex;
     flex-direction: column;
-}
-img.article{
-    height: 40%;
-}
-section.archive article {
-    width: 33%;
-    padding: 1em;
-}
-
-article>p {
-    text-align: center;
-    line-height: 1.618em;
-    font-size: 14px;
-    font-family: 'Lato'
-}
-article button {
-    width: 60%;
-    margin: 0 auto;
-    padding: .5em;
-    border-style: none;
-    background-color: white;
-    border: 2px solid black;
-    font-family: 'Raleway';
-    font-size: 12px;
-    font-weight: 600;
-}
-
-/* ===============GALLERY================== */
-
-section.gallery {
-    display: flex;
-    flex-direction: row;
-    width: 90vw;
-}
-
-div.gallery1 {
-    display: block;
-    width: 33%;
-}
-div.gallery2 {
-    display: block;
-    width: 33%;
-}
-div.gallery3 {
-    display: block;
-    width: 33%;
-}
-
-section.gallery img {
-    padding: 1em;
-}
-
-div img {
-    width: 100%
-}
-/* ===============ABOUT================== */
-
-article.about {
-    background-color: #d9f1f4;
-    padding: 6em 8em;
-}
-h2{
-    color: black;
-    font-family: 'Raleway';
+    color: #7B98AA;
     font-weight: 500;
-    font-size: 22px;
-    text-align: center;
+}
+
+ul.recent_issues li{
+    padding-top: 10px;
     letter-spacing: .1em;
-    position: relative;
-    top: 10%;
-}
-article.about h3 {
-    text-align: center;
-    color: black;
-    font-family: 'Raleway';
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: bold;
+    color: #7B98AA;
+    margin-left: 2vw;
 }
 
-
-/* ===============COMMENTS================== */
+/* ============Contact============== */
 
 h3.comment {
     font-family: 'Raleway';
     font-weight: 600;
     font-size: 20px;
-    letter-spacing: normal;
-
+    letter-spacing: normal
 
 }
 div.comment {
@@ -227,13 +187,13 @@ div>button {
     font-weight: 600;
 }
 
-div.comment>input.third {
+div.comment>input.half {
     border-style: none;
     background-color: white;
     border: 2px solid black;
-    width: 31%;
+    width: 46%;
     height: 2vh;
-    margin: .5em;
+    margin: 2% 2% 2% 2%;
 }
 /* ============Footer============== */
 
@@ -302,4 +262,76 @@ input{
 
 hr {
     border-top: 1px solid black;
+}
+/* ============Media Queries============== */
+
+@media only screen and (max-width: 900px){
+    ul{
+        margin: 0px;
+        padding: 20px 0px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    li a {
+        color: #64A0AC;
+        padding: 20px 36px;
+        text-decoration: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    div.comment>input.half { 
+        width: 96%;
+        height: 2vh;
+        margin: 2% 0% 2% 0%;
+    }
+
+    main {
+        display: block;
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    article {
+        display: block;
+        width: 90%;
+    }
+
+    aside{
+        margin-top: 60px;
+        width: 100%;
+        display: block;
+    }
+
+    #hamburger {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+
+    nav ul li a {
+        display: none;
+        
+
+    }
+    .main-nav ul li{
+        display: none;
+        
+    }
+
+
+
+
+
+
+
+
 }
