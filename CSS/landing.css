@@ -24,8 +24,14 @@ body {
 }
 
 #hamburger {
-    display: none;
+    position: relative;
+    top: -60px;
+    z-index: 10;
+    visibility: hidden;
+    transition: all .7s ease-in-out;
+    width: 5%;
 }
+
 
 ul {
     margin: 0px;
@@ -59,6 +65,8 @@ header {
     width: 100%;
     background-position: center;
     align-self: center;
+    background-attachment: fixed;
+    margin-top: -1.8em;
     
 }
 h1 {
@@ -88,6 +96,8 @@ main {
     width: 90vw;
     margin: 0 auto;
 }
+
+
 h3 {
     text-align: center;
     color: darkgrey;
@@ -109,8 +119,12 @@ section article {
 img.article{
     height: 40%;
     align-self: center;
-   /*  margin: 10px; */
 }
+
+img.article:hover {
+    opacity: .6;
+}
+
 section.archive article {
     width: 33%;
     padding: 1em;
@@ -162,6 +176,11 @@ section.gallery img {
 
 div img {
     width: 100%
+}
+
+section.gallery img:hover {
+    opacity: .6;
+
 }
 div.twenty {
     padding: 80px 0 20px 0;
@@ -285,8 +304,8 @@ h5 {
 
 }
 form {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -403,6 +422,29 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
+    #hamburger {
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        visibility: visible;
+        width: 5%;
+    }
+
+    nav {
+        visibility: hidden;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+    
+    .main-nav ul li{
+        display: none;    
+    }
+    header {
+        margin-top: -30px;
+        position: relative;
+    }
 
 
 
