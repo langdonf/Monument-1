@@ -77,7 +77,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+ul.nav li a:hover {
     background-color: #555;
     color: white;
 }
@@ -223,11 +223,13 @@ ul.social {
     flex-direction: row;
 }
 
-ul.social li {
+ul.social li a{
     font-family: 'Lato';
     padding: 0 20px;
     margin-top: 20px;
 }
+
+
 
 h5 {
     text-align: center;
