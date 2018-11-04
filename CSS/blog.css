@@ -280,7 +280,7 @@ hr {
         font-weight: 700;
         list-style-type: none;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
     }
 
@@ -289,6 +289,13 @@ hr {
         padding: 20px 36px;
         text-decoration: none;
     }
+
+    article.main {
+        width: 70%
+    }
+
+
+
 }
 
 
@@ -300,22 +307,24 @@ hr {
         margin: 2% 0% 2% 0%;
     }
     body {
-        margin: 0 auto
+        margin: 0 auto;
+        padding: 0;
     }
     main {
         display: block;
-        width: 95vw;
-        margin-left: 2em;
-        
+        margin: 0 0 0 1em;
+        padding: 0;   
     }
 
-    article {
+    article.main {
         display: block;
-        width: 90%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
     }
 
     aside{
-        margin-top: 60px;
+        margin-top: 0px;
         width: 100%;
         display: block;
     }
@@ -328,11 +337,7 @@ hr {
         width: 5%;
         
     }
-    #hamburger:hover {
-        
-        
 
-    }
     nav {
         visibility: hidden;
     }

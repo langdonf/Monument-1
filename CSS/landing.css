@@ -58,6 +58,7 @@ header {
     height: 80vh;
     width: 100%;
     background-position: center;
+    align-self: center;
     
 }
 h1 {
@@ -103,13 +104,17 @@ section {
 section article {
     display: flex;
     flex-direction: column;
+    
 }
 img.article{
     height: 40%;
+    align-self: center;
+   /*  margin: 10px; */
 }
 section.archive article {
     width: 33%;
     padding: 1em;
+    margin: 10px;
 }
 
 article>p {
@@ -316,7 +321,7 @@ hr {
     margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
     ul{
         margin: 0px;
         padding: 20px 0px;
@@ -325,7 +330,7 @@ hr {
         font-weight: 700;
         list-style-type: none;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: row;
     }
 
@@ -395,4 +400,11 @@ hr {
         margin: 10px 0;
     }
     
+}
+
+@media only screen and (max-width: 600px) {
+
+
+
+
 }
