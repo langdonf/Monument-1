@@ -2,7 +2,8 @@
 
 * {
     color: #6A787B;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -55,6 +56,8 @@ h2{
     top: -60px;
     z-index: 10;
     visibility: hidden;
+    -webkit-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
     width: 5%;
 }
@@ -66,9 +69,15 @@ ul {
     font-size: 16px;
     font-weight: 700;
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 li a {
@@ -89,8 +98,13 @@ ul.nav li a:hover {
     width: 100%;
 }
 main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 95vw;
     margin: 0 auto;
 }
@@ -135,8 +149,13 @@ aside>h4{
 
 ul.recent_issues {
     list-style-type: disc;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     color: #7B98AA;
     font-weight: 500;
 }
@@ -160,10 +179,18 @@ h3.comment {
 }
 div.comment {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 80%;
     margin-bottom: 60px;
 }
@@ -206,8 +233,13 @@ div.comment>input.half {
 footer {
     height: 260px;
     background-color: #CDF3F6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 h4 {
@@ -218,9 +250,16 @@ h4 {
 
 ul.social {
     top: 18%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 ul.social li a{
@@ -238,9 +277,16 @@ h5 {
 form {
     margin-top: 1vh;
     margin-bottom: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 button.button {
@@ -279,9 +325,15 @@ hr {
         font-size: 16px;
         font-weight: 700;
         list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 
     li a {
@@ -357,8 +409,13 @@ hr {
 
     ul.recent_issues {
         list-style-type: disc;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         color: #7B98AA;
         font-weight: 500;
         margin-left: 2em;

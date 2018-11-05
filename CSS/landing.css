@@ -2,7 +2,8 @@
 
 * {
     color: #6A787B;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -28,6 +29,8 @@ body {
     top: -60px;
     z-index: 10;
     visibility: hidden;
+    -webkit-transition: all .7s ease-in-out;
+    -o-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
     width: 5%;
 }
@@ -40,9 +43,15 @@ ul {
     font-size: 16px;
     font-weight: 700;
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 li a {
@@ -61,12 +70,14 @@ ul.nav li a:hover {
 
 header {
     background-image: url(../IMG/home_header_bg.jpg);
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     background-position: center;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     background-attachment: fixed;
-    margin-top: -1.8em;
+    margin-top: -3.8em;
     
 }
 h1 {
@@ -107,18 +118,30 @@ h3 {
     line-height: 20px;
 }
 section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 section article {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     
 }
 img.article{
     height: 40%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
 }
 
 img.article:hover {
@@ -152,8 +175,13 @@ article button {
 /* ===============GALLERY================== */
 
 section.gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 90vw;
 }
 
@@ -228,12 +256,20 @@ h3.comment {
 }
 div.comment {
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 80%;
-    margin-bottom: 60px;
+    margin-bottom: 1.8em;
 }
 h3.comment {
     text-align: center
@@ -274,8 +310,13 @@ div.comment>input.third {
 footer {
     height: 260px;
     background-color: #CDF3F6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 h4 {
@@ -286,9 +327,16 @@ h4 {
 
 ul.social {
     top: 18%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 ul.social li {
@@ -312,9 +360,16 @@ h5 {
 form {
     margin-top: 1vh;
     margin-bottom: 1vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 button.button {
@@ -346,6 +401,9 @@ hr {
     margin-bottom: 10px;
 }
 
+
+/* ================Media Queries==================== */
+
 @media only screen and (max-width: 1000px){
     ul{
         margin: 0px;
@@ -354,9 +412,15 @@ hr {
         font-size: 16px;
         font-weight: 700;
         list-style-type: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
     }
 
     li a {
@@ -386,11 +450,18 @@ hr {
     }
     div.comment {
         margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
         width: 80%;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     h3.comment {
         text-align: center
@@ -451,8 +522,28 @@ hr {
         margin-top: -30px;
         position: relative;
     }
-
-
-
+    section.gallery {
+        display: block;
+    }
+    
+    div.gallery1 {
+        display: block; 
+        align-items: center;  
+        width: 100%;
+    }
+    div.gallery2 {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+    div.gallery3 {
+        display: block;
+        align-items: center;
+        width: 100%;
+    }
+    article.about {
+        background-color: #d9f1f4;
+        padding: 3em 4em;
+    }
 
 }
