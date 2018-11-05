@@ -17,10 +17,10 @@ body {
 
 header {
     background-image: url(../IMG/blog_header_bg.jpg);
-    height: 400px;
+    height: 50vh;
     width: 100%;
     background-position: center;
-    margin-top: -1.9em;
+    margin-top: -3.9em;
     
 }
 h1 {
@@ -228,7 +228,6 @@ ul.social li a{
     padding: 0 20px;
     margin-top: 20px;
 }
-
 
 
 h5 {
